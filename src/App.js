@@ -1,9 +1,13 @@
 import React from "react"
 import Header from "./Header"
+import Content from "./Content"
 
 const App = () => {
   return(
-    <h1><Header/></h1>
+    <div>
+      <h1><Header/></h1>
+      <Content/>
+    </div>
   )
 }
 
