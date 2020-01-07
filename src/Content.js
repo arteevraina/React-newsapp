@@ -10,7 +10,6 @@ class Content extends React.Component {
             news: []
         }
     }
-
     componentDidMount() {
     const apiPath = "https://newsapi.org/v2/top-headlines?"
     const country = "country=us&"
@@ -26,12 +25,6 @@ class Content extends React.Component {
         })
         
     }
-
-   /* const newsComponents = this.state.news.map((news) => {
-        return(
-            <News key = {news.articles.id}/>
-        )
-    }) */
 
     render() {
         return(

@@ -1,20 +1,24 @@
 import React from "react"
-
 class Display extends React.Component {
 
-
-
-   /* const newsComponents = this.props.news.map((news) => {
-        return(
-            <News key = {news.articles.id}/>
-        )}*/
     render() {
     return(
         <div>
             {
                 this.props.news.map((news) => {
                     return(
-                        <p key={news.id}>{news.title}</p>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-6 col-md-4">
+                                <div className="thumbnail">
+                                    <img src={news.urlToImage} alt="imagehere"/>
+                                    <div className="caption">
+                                        <p key={news.id}>{news.title}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     )
                 })
             }

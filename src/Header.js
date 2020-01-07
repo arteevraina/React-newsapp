@@ -2,7 +2,11 @@ import React from "react"
 
 const Header = () => {
     return(
-        <h1>News App</h1>
+        <nav className="navbar navbar-default navbar-fixed-top" >
+            <div className="container">
+                <h3>React News App</h3>
+            </div>
+        </nav>
     )
 }
 
