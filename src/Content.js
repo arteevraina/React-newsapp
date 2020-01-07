@@ -1,5 +1,6 @@
 import React from "react"
 import axios from "axios"
+import Display from "./Display"
 
 class Content extends React.Component {
 
@@ -26,10 +27,16 @@ class Content extends React.Component {
         
     }
 
+   /* const newsComponents = this.state.news.map((news) => {
+        return(
+            <News key = {news.articles.id}/>
+        )
+    }) */
+
     render() {
         return(
             <div>
-                <p>Hello World</p>
+                <Display/>
             </div>
         )
     }
