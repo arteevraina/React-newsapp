@@ -13,7 +13,7 @@ class Content extends React.Component {
     componentDidMount() {
     const apiPath = "https://newsapi.org/v2/top-headlines?"
     const country = "country=us&"
-    const apiKey = "apiKey=10ec0e1a10374ee88678d00ea394efce"
+    const apiKey = process.env.REACT_APP_API_KEY
     const url = apiPath + country + apiKey
     axios.get(url)
         .then(response => {
