@@ -1,9 +1,10 @@
 import React from "react"
+import "./index.css"
 class Display extends React.Component {
 
     render() {
     return(
-        <div>
+        <div key={this.props.news.id}>
             {
                 this.props.news.map((news) => {
                     return(
@@ -13,7 +14,7 @@ class Display extends React.Component {
                                 <div className="thumbnail">
                                     <img src={news.urlToImage} alt="imagehere"/>
                                     <div className="caption">
-                                        <p key={news.id}>{news.title}</p>
+                                        <a href={news.url}><h3>{news.title}</h3></a>
                                     </div>
                                 </div>
                             </div>
