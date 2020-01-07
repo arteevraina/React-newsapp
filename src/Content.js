@@ -6,7 +6,7 @@ class Content extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            articles: []
+            news: []
         }
     }
 
@@ -18,14 +18,19 @@ class Content extends React.Component {
     axios.get(url)
         .then(response => {
             console.log(response.data.articles)
-            this.setState({articles: response.data.articles})
+            this.setState({news: response.data.articles})
+        })
+        .catch((error) => {
+            console.log("error")
         })
         
     }
 
     render() {
         return(
-            <p>Hello World</p>
+            <div>
+                <p>Hello World</p>
+            </div>
         )
     }
 }
