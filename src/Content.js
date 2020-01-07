@@ -36,7 +36,7 @@ class Content extends React.Component {
     render() {
         return(
             <div>
-                <Display/>
+                <Display news = {this.state.news}/>
             </div>
         )
     }
